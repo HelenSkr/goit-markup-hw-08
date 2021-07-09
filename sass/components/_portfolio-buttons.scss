@@ -1,0 +1,40 @@
+/*кнопки портфолио*/
+.section-portfolio__nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+  .section-portfolio__button{
+    display: inline-block;
+    background-color: var(--background-color-lignt-blue);
+    border-radius: 4px;
+    border: 4px var(--background-color-lignt-blue);
+    color: var(--text-color-dark-grey);
+    padding: 6px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight: 500;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &--current,
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px var(--box-shadow-ten), 0px 1px 2px var(--box-shadow-eight), 0px 2px 2px var(--box-shadow-twelve);
+  }
+  }
+  .section-portfolio__nav-item{
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+ 

@@ -1,0 +1,23 @@
+
+.logo {
+    margin-right: 93px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--logo-color-dark);
+    line-height: 1.17;
+  }
+  .logo--white{
+    color: var(--white-text);
+  }
+  .logo__part {
+    color: var(--accent-color);
+  }
+  .header-nav .logo{
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+.footer-logo-contacts{
+    margin-right: 70px;
+    align-items: center;
+  }

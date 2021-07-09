@@ -1,0 +1,88 @@
+.social-icons-list{
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+      &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  .social-icons-list__link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus{
+      background-color: var(--accent-color);
+
+    &:hover .social-icons-list__icon,
+    &:focus .social-icons-list__icon{
+    fill: var(--white-text);
+    background-color: var(--accent-color);
+  }
+    }
+  }
+   .social-icons-list__icon{
+    fill: var(--social-icons-grey);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
+  .footer-social-icons__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    }
+    .footer-social-icons{
+      
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .footer-social-icons__list{
+      display: flex;
+      margin-top: 20px;
+        & :not(:last-child){
+        margin-right: 10px;
+        }    
+    }
+    
+    .footer-social-icons__link{
+      background-color: var(--social-icons-bkg-color);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      fill: var(--white-text);
+    
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus{
+      background-color: var(--accent-color);
+      
+      &:hover .footer-social-icons__icon,
+      &:focus .footer-social-icons__icon{
+      fill: var(--white-text);
+      background-color: var(--accent-color);
+      }
+      }
+      }
+    .footer-social-icons__icon{
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    

@@ -1,0 +1,40 @@
+.section-about-us{
+    padding-bottom: 94px;
+  }
+  .section-about-us__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--text-color-dark-grey);
+    text-align: center;
+  }
+  .section-about-us__list{
+    display: flex;
+    margin-top: 50px;
+  }
+  .section-about-us__item{
+    &:not(:last-child){
+    margin-right: 30px;
+  }
+  }
+  .section-about-us__card{
+    position: relative;;
+  }
+  .section-about-us__product-type{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.80);
+    text-transform: uppercase;
+    color: var(--white-text);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.17;
+  }
+  
