@@ -12,11 +12,22 @@
   }
   .section-our-clients__list{
     display: flex;
-    margin-left: auto;
-    margin-right: auto; 
-   & :not(:last-child){
-      margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  
+
+      @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto; 
+        & :not(:last-child){
+        margin-right: 30px;}
+      }
     } 
+  .section-our-clients__item{
+    flex-basis: calc((100% - 60px) / 2);
+
   }
   .section-our-clients__link{
     display: flex;

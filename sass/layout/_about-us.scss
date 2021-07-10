@@ -1,5 +1,8 @@
 .section-about-us{
     padding-bottom: 94px;
+    @media screen and (max-width: 1200px) {
+    display: none;
+    }
   }
   .section-about-us__title {
     font-weight: 700;

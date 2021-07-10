@@ -3,8 +3,13 @@
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: space-between;
   }
   .navlist{
+    @media screen and (max-width: 765px) {
+      display: none;
+      }
+
     display: flex;
     position: absolute;
     bottom: 0;
