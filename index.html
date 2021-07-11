@@ -176,8 +176,10 @@
           <ul class="ul section-about-us__list">
             <li class="section-about-us__item ">
               <div class="section-about-us__card">
-                <img
+                 <img
                   src="./imeges/squoosh_img1.jpg"
+                  srcset="./imeges/d_about1.jpg 1x,
+                          ./imeges/d_about1_2x.jpg 2x"
                   alt="img_laptop"
                   width="370"
                   height="294"
@@ -190,6 +192,8 @@
               <div class="section-about-us__card">
                 <img
                   src="./imeges/squoosh_img2.jpg"
+                  srcset="./imeges/d_about2.jpg 1x,
+                          ./imeges/d_about2_2x.jpg 2x"
                   alt="img_phone"
                   width="370"
                   height="294"
@@ -202,6 +206,8 @@
               <div class="section-about-us__card">
                 <img
                   src="./imeges/squoosh_img3.jpg"
+                  srcset="./imeges/d_about3.jpg 1x,
+                          ./imeges/d_about3_2x.jpg 2x"
                   alt="img_tabtel"
                   width="370"
                   height="294"
@@ -218,11 +224,31 @@
           <h2 class="section-our-teem__title">Наша команда</h2>
           <ul class="ul section-our-teem__list">
             <li class="section-our-teem__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/d_photo1.jpg 1x,
+                    ./images/d_photo1_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  ./images/t_photo1.jpg 1x,
+                  ./images/t_photo1_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/m_photo1.jpg 1x,
+                  ./images/m_photo1_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 src="./imeges/squoosh_photo_designer1.jpg"
                 alt="photo designer"
                 class="fill"
               />
+            </picture>
               <div class="section-our-teem__card">
                 <h3 class="section-our-teem__name">Игорь Демьяненко</h3>
                 <p class="section-our-teem__position">Product Designer</p>
@@ -259,11 +285,31 @@
               </div>
             </li>
             <li class="section-our-teem__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/d_photo2.jpg 1x,
+                    ./images/d_photo2_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  ./images/t_photo2.jpg 1x,
+                  ./images/t_photo2_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/m_photo2.jpg 1x,
+                  ./images/m_photo2_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 src="./imeges/squoosh_photo_developer2.jpg"
                 alt="photo developer"
                 class="fill"
               />
+              </picture>
               <div class="section-our-teem__card">
                 <h3 class="section-our-teem__name">Ольга Репина</h3>
                 <p class="section-our-teem__position">Frontend Developer</p>
@@ -301,11 +347,31 @@
             </li>
 
             <li class="section-our-teem__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/d_photo3.jpg 1x,
+                    ./images/d_photo3_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  ./images/t_photo3.jpg 1x,
+                  ./images/t_photo3_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/m_photo3.jpg 1x,
+                  ./images/m_photo3_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 src="./imeges/squoosh_photo_marketing3.jpg"
                 alt="photo marketing"
                 class="fill"
               />
+              </picture>
               <div class="section-our-teem__card">
                 <h3 class="section-our-teem__name">Николай Тарасов</h3>
                 <p class="section-our-teem__position">Marketing</p>
@@ -343,11 +409,34 @@
             </li>
 
             <li class="section-our-teem__item">
-              <img
+             
+              <picture>
+                <source
+                  srcset=" ./images/d_photo4.jpg,
+                  ./images/d_photo4_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  ./images/t_photo4.jpg,
+                  ./images/t_photo4_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/m_photo4.jpg,
+                  ./images/m_photo4_2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
                 src="./imeges/squoosh_photo_ui_designer4.jpg"
                 alt="photo ui designer"
                 class="fill"
-              />
+                />
+              </picture>
+          
               <div class="section-our-teem__card">
                 <h3 class="section-our-teem__name">Михаил Ермаков</h3>
                 <p class="section-our-teem__position">UI Designer</p>
