@@ -6,11 +6,18 @@
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../imeges/hero.jpg);
+    background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../imeges/m_hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    @media screen and(min-width:768px) {
+      background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../imeges/t_hero.jpg);
+    }
+    @media screen and(min-width:1200px) {
+      background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../imeges/d_hero.jpg);
+    }
+
     &__title{
       font-family: 'Roboto';
       color: var(--white-text);
