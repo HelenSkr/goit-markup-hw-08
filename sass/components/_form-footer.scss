@@ -1,13 +1,31 @@
 .form-footer{
     display: flex;
-    margin-left: 92px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;   
+    width: 100%; 
+    
+    @media screen and(min-width:1200px) {
+      margin-left: 92px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch; 
+    }
 
     &__block{
-      display: block;
-      width: 358px;
-      margin-right: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      /*width: 358px;*/
+      /*margin-right: 12px;*/
+
+      @media screen and (min-width:1200px){
+        display: block;
+      }
     }
     &__title{
+    display: flex;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -15,9 +33,9 @@
     line-height: 1.17;
     }    
     &__input{
+      width: 100%;
       margin-top: 20px;
       padding-left: 16px;
-      width: 358px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
@@ -26,6 +44,14 @@
       line-height: 1.17;
       letter-spacing: 0.03em;
       color: var(--white-text);
+
+      @media screen and(min-width:768px) {
+        width: 450px;
+     }
+
+      @media screen and(min-width:1200px) {
+         width: 358px;
+      }
     }
     &__input::placeholder{
       font-size: 16px;
@@ -36,12 +62,19 @@
   }
   
   .footer .button-main{
-    margin: 0;
+    /*margin: 0;*/
     display: flex;
-    align-self: flex-end;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 28px;
+
+    @media screen and(min-width:1200px) {
+      align-self: flex-end;
+      margin: 0;
+    }
   }
   .button-main__icon-send{
     margin-left: 10px;
+    
   }

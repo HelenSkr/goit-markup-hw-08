@@ -1,9 +1,15 @@
 /*кнопки портфолио*/
 .section-portfolio__nav-list{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 34px;
+    flex-wrap: wrap;
+    align-items: center;   
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+      flex-wrap: nowrap;
+      justify-content: center; 
+      margin-bottom: 34px;
+    }
   }
   .section-portfolio__button{
     display: inline-block;
@@ -33,6 +39,7 @@
   }
   .section-portfolio__nav-item{
     margin-right: 8px;
+    margin-bottom: 15px;
     &:last-child{
       margin-right: 0;
     }

@@ -1,11 +1,15 @@
 
 .logo {
-    margin-right: 88px;
+    
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     color: var(--logo-color-dark);
     line-height: 1.17;
+     
+    @media screen and(min-width: 1200px){
+      margin-right: 88px;  
+    }
 
      }
   .logo--white{
@@ -20,8 +24,4 @@
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 15px;
-  }
-.footer-logo-contacts{
-    margin-right: 70px;
-    align-items: center;
   }
