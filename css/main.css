@@ -359,6 +359,10 @@ ul {
   cursor: pointer;
 }
 
+.mobile-menu-nav__item {
+  margin-bottom: 32px;
+}
+
 .mobile-menu-nav__link {
   font-weight: 500;
   font-size: 40px;
@@ -1347,7 +1351,7 @@ ul {
   }
 }
 
-.projects-list__item:not(:last-child) {
+.projects-list__item {
   margin-top: 30px;
 }
 
