@@ -116,11 +116,15 @@ ul {
 }
 
 .header-nav .logo {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav .logo {
+    margin-right: 88px;
+  }
 }
 
 .contacts-header {
@@ -950,7 +954,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-logo-contacts {
     margin-right: 70px;
-    margin-bottom: -60px;
+    margin-bottom: 0px;
   }
 }
 
